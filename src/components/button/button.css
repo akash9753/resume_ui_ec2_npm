@@ -1,0 +1,21 @@
+/* Button.css */
+
+.custom-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: #0077b6; /* Blue background color */
+    color: #ffffff; /* White text color */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  }
+  
+  .custom-button:hover {
+    background-color: #005a8d; /* Darker blue on hover */
+    color: #ffffff; /* White text color on hover */
+  }
+  
+  /* You can adjust the colors and shadow as needed */
+  

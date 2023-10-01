@@ -1,0 +1,71 @@
+
+
+  /* Card container */
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the card horizontally */
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  /* Card image */
+  .card-image {
+    max-width: 100%;
+    height: auto; /* Ensure the image maintains its aspect ratio */
+  }
+  
+  /* Card content */
+  .card-content {
+    /* border: 1px solid red; */
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+  }
+  .card_resume_name{
+      border: 1px solid rgb(255, 255, 255);
+  }
+  .card_button_box{
+      /* border: 1px solid black; */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  /* Media query for responsiveness */
+  @media screen and (max-width: 600px) {
+    .card {
+      max-width: 100%; /* Set maximum width to 100% for smaller screens */
+    }
+  }
+/* Pseudo-element for "Generate Resume" text */
+.card::after {
+  content: "View Resume"; /* Text content */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 84%;
+  background-color: rgba(0, 0, 0, 0.7); /* Transparent black background */
+  color: white; /* Text color */
+  font-weight: bold;
+  font-size: 18px;
+  /* padding: 8px 16px;  */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+/* Change text opacity on hover */
+.card:hover::after {
+  opacity: 1; /* Show the text on hover */
+}
+

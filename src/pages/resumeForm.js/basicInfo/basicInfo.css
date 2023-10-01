@@ -1,0 +1,179 @@
+.basicInfo_container {
+    /* margin-top: 30px; */
+  
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+  }
+  .basicInfo_title_box{
+    display: flex;
+    justify-content: space-between;
+  }
+  .basicInfo_title {
+    /* margin-bottom: 8px; */
+    font-size: 16px;
+    font-weight: 600;
+    /* margin: 6px 0; */
+    color: #333;
+    padding: 8px;
+    height: 5rem;
+  }
+  
+  .basicInfo_scrollable_container {
+    height: calc(100% - 10rem);
+    overflow-y: scroll;
+  }
+  
+  /* Hide scrollbar for WebKit-based browsers (Chrome, Safari) */
+  .basicInfo_scrollable_container::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  
+  /* Optionally, you can style the thumb (dragging handle) */
+  .basicInfo_scrollable_container::-webkit-scrollbar-thumb {
+    background: transparent; /* This makes the thumb invisible */
+  }
+  
+  .basicInfo_footer {
+    /* border: 1px solid rgb(53, 0, 128); */
+    height: 5rem;
+    /* background-color: aquamarine; */
+  }
+  
+  .basicInfo_fields {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .basicInfo_inputbox_devide {
+    /* border: 1px solid green;  */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+  }
+  .basicInfo_inputbox_devide_upload_image{
+     /* border: 1px solid green;  */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+  }
+  
+  .basicInfo_inputbox_devide .input-field{
+      display: flex;
+      width: calc(100% / 3 - 15px);
+      flex-direction: column;
+      margin: 4px 0;
+  }
+  .basicInfo_inputbox_devide_upload_image .input-field{
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+ }
+  
+  .basicInfo_inputbox_devide .input-field input{
+      outline: none;
+      font-size: 14px;
+      font-weight: 400;
+      color: #333;
+      border-radius: 5px;
+      border: 1px solid #aaa;
+      padding: 0 15px;
+      height: 42px;
+      margin: 8px 4px;
+  }
+  
+  .basicInfo_fields .input-field span {
+      font-size: 14px;
+      font-weight: 500;
+      color: #2e2e2e;
+  }
+  
+  .basicInfo_fields .input-field input:focus {
+      border-color: #007bff; /* Change the border color to a shade of blue (#007bff) when focused */
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a subtle box shadow when focused */
+  }
+  
+  .error-text {
+    color: red;
+    font-size: 14px;
+    margin-top: 1px;
+    height: 2rem;
+  }
+
+  .input-field input[type="date"] {
+    color: #707070;
+  }
+  
+  .input-field input[type="date"]:valid {
+    color: #333;
+  }
+  
+  .image-preview-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  
+  .image-preview {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .image-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Styling for the "Choose Files" input box */
+  .input-field input[type="file"] {
+    display: none; /* Hide the default input */
+  }
+  
+  .upload-btn {
+    display: inline-block;
+    color: #000000;
+    border: 1px solid #aaa;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  @media (max-width: 821px) {
+    .basicInfo_fields {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .basicInfo_fields_upload_image{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 550px) {
+    .basicInfo_fields .input-field {
+      width: 100%;
+    }
+    
+    .basicInfo_fields {
+      display: flex;
+      flex-direction: column;
+    }
+    .basicInfo_fields_upload_image .input-field{
+      width: 100%;
+    }
+  }
+  

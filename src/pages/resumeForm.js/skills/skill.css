@@ -1,0 +1,102 @@
+.skill_container {
+  /* margin-top: 30px; */
+
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+.skill_title {
+  display: block;
+  /* margin-bottom: 8px; */
+  font-size: 16px;
+  font-weight: 600;
+  /* margin: 6px 0; */
+  color: #333;
+  padding: 8px;
+  height: 5rem;
+}
+
+.skill_scrollable_container {
+  height: calc(100% - 10rem);
+  overflow-y: scroll;
+}
+
+/* Hide scrollbar for WebKit-based browsers (Chrome, Safari) */
+.skill_scrollable_container::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/* Optionally, you can style the thumb (dragging handle) */
+.skill_scrollable_container::-webkit-scrollbar-thumb {
+  background: transparent; /* This makes the thumb invisible */
+}
+
+.skill_footer {
+  /* border: 1px solid rgb(53, 0, 128); */
+  height: 5rem;
+  /* background-color: aquamarine; */
+}
+
+.skill_fields {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+}
+
+.skill_fields .input-field {
+  display: flex;
+  width: calc(100% / 3 - 15px);
+  flex-direction: column;
+  margin: 4px 0;
+  
+}
+.skill_fields .input-field span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #2e2e2e;
+}
+
+.skill_fields .input-field input {
+  outline: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  padding: 0 15px;
+  height: 42px;
+  margin: 8px 4px;
+}
+.skill_fields .input-field input:focus {
+  border-color: #007bff; /* Change the border color to a shade of blue (#007bff) when focused */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a subtle box shadow when focused */
+}
+
+.error-text {
+  color: red;
+  font-size: 14px;
+  margin-top: 1px;
+  height: 2rem;
+}
+
+@media (max-width: 821px) {
+  .skill_fields {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 550px) {
+  .skill_fields .input-field {
+    width: 100%;
+  }
+
+  .skill_fields {
+    display: flex;
+    flex-direction: column;
+  }
+}

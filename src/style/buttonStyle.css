@@ -1,0 +1,260 @@
+.resumeForm_container form .nextBtn {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    height: 45px;
+    max-width: 200px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    /* margin: 28px 0; */
+    background-color: #4070f4;
+    transition: all 0.3s linear;
+    float: right;
+    
+}
+
+form .nextBtn:hover{
+    background-color: #265df2;
+    cursor: pointer;
+}
+
+
+
+.nextBtn .btnText {
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.resumeForm_container form .previousBtn {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  height: 45px;
+  max-width: 200px;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 5px;
+  /* margin: 28px 0; */
+  background-color: #4070f4;
+  transition: all 0.3s linear;
+  
+}
+
+form .previousBtn:hover{
+  background-color: #265df2;
+  cursor: pointer;
+}
+
+
+
+.previousBtn .btnText {
+  margin-left: 10px; /* Adjust the margin as needed */
+}
+
+
+.resumeForm_container form .submitBtn {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  height: 45px;
+  max-width: 200px;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 5px;
+  /* margin: 28px 0; */
+  background-color: #4070f4;
+  transition: all 0.3s linear;
+  float: right;
+}
+
+form .submitBtn:hover{
+  background-color: #265df2;
+  cursor: pointer;
+}
+
+.clear-btn{
+  height: 45px;
+  max-width: 100px;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 5px;
+  margin: 8px 0;
+  background-color: #81f93c;
+  transition: all 0.3s linear;
+}
+
+.clear-btn:hover{
+  background-color: #00ff22;
+  cursor: pointer;
+}
+
+.addBtn {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  height: 45px;
+  max-width: 100px;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 5px;
+  margin: 0px 0;
+  background-color: #40f47f;
+  transition: all 0.3s linear;
+  margin-bottom: 8px;
+}
+
+ .addBtn:hover{
+  background-color: #0cec4f;
+  cursor: pointer;
+}
+
+
+
+
+.removeBtn {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  height: 45px;
+  width: 100px;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 5px;
+  margin: 5px 0;
+  background-color: #ef5f3f;
+  transition: all 0.3s linear;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.removeBtn:hover{
+  background-color: #f81010;
+  cursor: pointer;
+}
+
+.download_pdf{
+  height: 45px;
+  width: 150px;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #617900;
+  transition: all 0.3s linear;
+}
+
+.download_pdf:hover{
+  background-color: #729414;
+  cursor: pointer;
+}
+
+@media (max-width : 822px){
+  .resumeForm_container form .removeBtn {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .download_pdf{
+    height: 33px;
+    width: 120px;
+  }
+}
+
+@media (max-width : 600px){
+  .resumeForm_container form .previousBtn{
+    height: 45px;
+    max-width: 130px;
+    width: 100%;
+    /* margin: 10px 0; */
+   
+  }
+  .resumeForm_container form .nextBtn{
+    height: 45px;
+    max-width: 100px;
+    width: 100%;
+    /* margin: 10px 0; */
+    float: right;
+  }
+  .resumeForm_container form .submitBtn{
+    height: 45px;
+    max-width: 100px;
+    width: 100%;
+    /* margin: 10px 0; */
+    float: right;
+  }
+  .resumeForm_container form .removeBtn {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  
+}
+
+.cancel_button{
+  background-color: #ff4d4d; /* Red background color */
+  color: white; /* White text color */
+  border: none; /* Remove button border */
+  border-radius: 50%; /* Make it a circle */
+  padding: 8px 12px; /* Add some padding for better appearance */
+  font-size: 16px; /* Adjust the font size */
+  cursor: pointer; /* Show pointer cursor on hover */
+  transition: background-color 0.2s; 
+}
+
+.cancel_button:hover{
+  background-color: #ff3333;
+}
+
+.ok_button{
+  background-color: #4caf50; /* Green background color */
+  color: white; /* White text color */
+  border: none; /* Remove button border */
+  border-radius: 4px; /* Add a slight border radius for rounded corners */
+  padding: 10px 20px; /* Add some padding for better appearance */
+  font-size: 16px; /* Adjust the font size */
+  cursor: pointer; /* Show pointer cursor on hover */
+  transition: background-color 0.2s;
+}
+.ok_button:hover{
+  background-color: #45a049;
+}
+
+.delete-button {
+  background-color: #e74c3c; /* Red background color */
+  color: white; /* Text color */
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+
+}
+
+/* Hover effect */
+.delete-button:hover {
+  background-color: #c0392b; /* Darker red background color on hover */
+}
+
+.edit-button {
+  background-color: #3498db; /* Blue background color */
+  color: white; /* Text color */
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect */
+.edit-button:hover {
+  background-color: #2980b9; /* Darker blue background color on hover */
+}

@@ -1,0 +1,166 @@
+.language_container {
+    /* margin-top: 30px; */
+  
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+  }
+  .language_title {
+    display: block;
+    /* margin-bottom: 8px; */
+    font-size: 16px;
+    font-weight: 600;
+    /* margin: 6px 0; */
+    color: #333;
+    padding: 8px;
+    height: 5rem;
+  }
+  
+  .language_scrollable_container {
+    height: calc(100% - 10rem);
+    overflow-y: scroll;
+  }
+  
+  /* Hide scrollbar for WebKit-based browsers (Chrome, Safari) */
+  .language_scrollable_container::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  
+  /* Optionally, you can style the thumb (dragging handle) */
+  .language_scrollable_container::-webkit-scrollbar-thumb {
+    background: transparent; /* This makes the thumb invisible */
+  }
+  
+  .language_footer {
+    /* border: 1px solid rgb(53, 0, 128); */
+    height: 5rem;
+    /* background-color: aquamarine; */
+  }
+  
+  .language_fields {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+  }
+  
+  .language_fields .input-field {
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+  }
+  .language_fields .input-field span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #2e2e2e;
+  }
+  
+  .language_fields .input-field input {
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+  }
+  .language_fields .input-field input:focus {
+    border-color: #007bff; /* Change the border color to a shade of blue (#007bff) when focused */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a subtle box shadow when focused */
+  }
+  
+  .error-text {
+    color: red;
+    font-size: 14px;
+    margin-top: 1px;
+    height: 2rem;
+  }
+  
+  @media (max-width: 821px) {
+    .language_fields {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
+  @media (max-width: 550px) {
+    .language_fields .input-field {
+      width: 100%;
+    }
+  
+    .language_fields {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+
+  /* language.css */
+
+/* Style for the select container */
+.select-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style for the select element */
+.select-element {
+  appearance: none; /* Remove default styling (e.g., arrow) */
+  padding: 8px 30px 8px 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* Style for the select arrow/icon */
+.select-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/* Style for the dropdown options */
+.select-options {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  width: 100%;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+/* Style for each option */
+.select-option {
+  padding: 8px 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.select-option:hover {
+  background-color: #f0f0f0;
+}
+
+/* Show the options when the select is focused */
+.select-element:focus + .select-options {
+  display: block;
+}
+
+/* Style for the select when it's open */
+.select-element.open {
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid #ccc;
+}

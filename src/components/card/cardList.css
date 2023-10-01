@@ -1,0 +1,15 @@
+.card-list {
+    display: flex;
+    flex-wrap: wrap; /* Wrap cards to the next row when they exceed the container width */
+    justify-content: center; /* Center cards horizontally within the container */
+    gap: 20px; /* Adjust the gap between cards as needed */
+    
+    padding: 40px 0;
+  }
+  
+  /* Card container for smaller screens */
+  @media screen and (max-width: 600px) {
+    .card-list {
+      flex-direction: column; /* Stack cards vertically on smaller screens */
+    }
+  }

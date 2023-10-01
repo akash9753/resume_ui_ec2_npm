@@ -1,0 +1,93 @@
+.page_container {
+  font-family: "Poppins", sans-serif;
+  height: calc(100vh - 8.5rem);
+  background: #e9ecf7;
+  padding: 10px;
+  display: flex;
+}
+
+.resumeFrom_sidebar {
+  width: 25%;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  margin-right: 0.5rem;
+  border-radius: 6px;
+  height: calc(100vh - 10.5rem);
+  transition: width 0.3s ease;
+}
+
+.resumeForm_container {
+  height: calc(100vh - 10.5rem);
+  border-radius: 6px;
+
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+  display: flex; /* Make it a flex container */
+  flex-direction: column; /* Stack child elements vertically */
+}
+.resumeForm_container .resume_header {
+  position: relative;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  padding: 4px;
+}
+
+.resumeForm_container .resume_header::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 3px;
+  width: 190px;
+  border-radius: 8px;
+  background-color: #4070f4;
+  margin-left: 4px;
+}
+
+.resumeForm_container form {
+  position: relative;
+  margin-top: 16px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.mandatory{
+  color: red !important;
+}
+
+@media (max-width: 821px) {
+  .resumeForm_container form {
+    overflow-y: scroll;
+  }
+  .resumeForm_container form::-webkit-scrollbar {
+    display: none;
+  }
+  form .fields .input-field {
+    width: calc(100% / 2 - 15px);
+  }
+  .resumeFrom_sidebar {
+    display: none;
+  }
+  .sidebar_button {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .resumeForm_container form {
+    overflow-y: scroll;
+  }
+  form .fields .input-field {
+    width: 100%;
+  }
+  form .fields {
+    max-height: 350px; /* Adjust the maximum height as needed */
+    overflow-y: scroll;
+    padding-right: 15px;
+  }
+  form .fields::-webkit-scrollbar {
+    display: none;
+  }
+}

@@ -1,0 +1,64 @@
+.edit_resume_background{
+    background-color: rgb(216, 223, 223);
+    width: 100%;
+    height: calc(100vh - 8.5rem);
+    
+}
+.edit_resume_container{
+    font-family: 'Poppins', sans-serif;
+    /* border: 1px solid rgb(255, 5, 5); */
+    max-width: 1300px;
+    margin: auto;
+    height: calc(100vh - 8.5rem);
+    display: flex;
+    flex-direction: column;
+    
+}
+.edit_resume_header_container{
+    /* border: 1px solid green; */
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.edit_resume_form_container{
+    /* border: 1px solid rgb(128, 0, 43); */
+    height: calc(100vh - 14.5rem);
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+.edit_resume_main_form{
+    /* border: 1px solid black; */
+    height: calc(100vh - 20.5rem);
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+.edit_resume_main_form::-webkit-scrollbar {
+    width: 0;
+  }
+  .edit_section_container{
+    
+    width: 95%;
+    
+  }
+  .edit_section_heading{
+    /* border: 1px solid red; */
+    height: 4rem;
+    background-color: #90CAF9;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+.edit_resume_footer{
+    /* border: 1px solid rgb(0, 0, 0); */
+    height: 6rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #f1ebeb;
+}

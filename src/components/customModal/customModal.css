@@ -1,0 +1,123 @@
+/* CustomModal.css */
+
+/* ... other styles ... */
+
+.custom-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    opacity: 0; /* Start with 0 opacity (hidden) */
+    transition: opacity 1s ease; 
+  }
+
+  .custom-modal.show {
+    opacity: 1; /* Show the modal with a fade-in effect */
+  }
+  
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    /* max-width: 1200px;  */
+    height: auto;
+    margin: 8px 8px;
+    position: relative;
+    top:12px;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .modal-body {
+    padding: 20px;
+    flex-grow: 1;
+    overflow-y: auto; /* Enable vertical scrollbar */
+  }
+  
+  /* Customize the scrollbar track */
+  .modal-body::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar track */
+    background-color: #f0f0f0; /* Background color of the track */
+  }
+  
+  /* Customize the scrollbar thumb (the draggable part) */
+  .modal-body::-webkit-scrollbar-thumb {
+    background-color: #3498db; /* Color of the thumb */
+    border-radius: 5px; /* Rounded corners for the thumb */
+    height: 30px !important;
+  }
+  
+  /* Customize the scrollbar thumb on hover */
+  .modal-body::-webkit-scrollbar-thumb:hover {
+    background-color: #2980b9; /* Color on hover */
+  }
+  
+  .modal-footer {
+    display: flex;
+    justify-content: space-between; /* Align buttons to the right */
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .modal-footer button {
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    outline: none;
+    /* text-transform: uppercase; */
+    transition: background-color 0.3s ease;
+    color: white;
+  }
+  
+
+  
+  /* Customize the add button */
+  .modal-footer button.add-button {
+    background-color: green;
+    color: white;
+  }
+  
+  
+  .close-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .custom-input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  .error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
